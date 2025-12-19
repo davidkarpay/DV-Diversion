@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diversion Program Resource Guide - Palm Beach County, FL</title>
+      <style>
+                * {
+                              margin: 0;
+                              padding: 0;
+                              box-sizing: border-box;
+                }
+
+                body {
+                              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                              line-height: 1.6;
+                              color: #333;
+                              background-color: #f5f5f5;
+                }
+
+                .container {
+                              max-width: 1200px;
+                              margin: 0 auto;
+                              padding: 20px;
+                }
+
+                header {
+                              background: linear-gradient(135deg, #1e3a5f 0%, #2c5282 100%);
+                              color: white;
+                              padding: 40px 20px;
+                              text-align: center;
+                              margin-bottom: 30px;
+                }
+
+                header h1 {
+                              font-size: 2.5em;
+                              margin-bottom: 10px;
+                }
+
+                header p {
+                              font-size: 1.2em;
+                              opacity: 0.9;
+                }
+
+                .card {
+                              background: white;
+                              border-radius: 10px;
+                              box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+                              padding: 30px;
+                              margin-bottom: 30px;
+                }
+
+                .card h2 {
+                              color: #1e3a5f;
+                              border-bottom: 3px solid #2c5282;
+                              padding-bottom: 10px;
+                              margin-bottom: 20px;
+                }
+
+                .card h3 {
+                              color: #2c5282;
+                              margin: 20px 0 15px 0;
+                }
+
+                .contact-info {
+                              background: #e8f4fd;
+                              padding: 20px;
+                              border-radius: 8px;
+                              border-left: 4px solid #2c5282;
+                }
+
+                .contact-info p {
+                              margin-bottom: 10px;
+                }
+
+                .contact-info a {
+                              color: #2c5282;
+                              font-weight: bold;
+                }
+
+                .alert-box {
+                              background: #fff3cd;
+                              border: 1px solid #ffc107;
+                              border-radius: 8px;
+                              padding: 20px;
+                              margin: 20px 0;
+                }
+
+                .alert-box.important {
+                              background: #d4edda;
+                              border-color: #28a745;
+                }
+
+                .alert-box strong {
+                              color: #856404;
+                }
+
+                .alert-box.important strong {
+                              color: #155724;
+                }
+
+                .referral-code {
+                              background: #1e3a5f;
+                              color: white;
+                              padding: 4px 12px;
+                              border-radius: 4px;
+                              font-family: monospace;
+                              font-size: 1.1em;
+                              letter-spacing: 1px;
+                }
+
+                table {
+                              width: 100%;
+                              border-collapse: collapse;
+                              margin-top: 20px;
+                              font-size: 0.95em;
+                }
+
+                th {
+                              background: #1e3a5f;
+                              color: white;
+                              padding: 15px 10px;
+                              text-align: left;
+                }
+
+                td {
+                              padding: 12px 10px;
+                              border-bottom: 1px solid #ddd;
+                              vertical-align: top;
+                }
+
+                tr:nth-child(even) {
+                              background: #f8f9fa;
+                }
+
+                tr:hover {
+                              background: #e8f4fd;
+                }
+
+                .provider-name {
+                              font-weight: bold;
+                              color: #1e3a5f;
+                }
+
+                .phone-link {
+                              color: #2c5282;
+                              text-decoration: none;
+                              font-weight: 500;
+                }
+
+                .phone-link:hover {
+                              text-decoration: underline;
+                }
+
+                .tag {
+                              display: inline-block;
+                              background: #e8f4fd;
+                              color: #2c5282;
+                              padding: 2px 8px;
+                              border-radius: 4px;
+                              font-size: 0.85em;
+                              margin: 2px;
+                }
+
+                .tag.zoom {
+                              background: #d4edda;
+                              color: #155724;
+                }
+
+                .tag.in-person {
+                              background: #cce5ff;
+                              color: #004085;
+                }
+
+                .notes-list {
+                              list-style: none;
+                              padding: 0;
+                }
+
+                .notes-list li {
+                              padding: 10px 0 10px 30px;
+                              position: relative;
+                              border-bottom: 1px solid #eee;
+                }
+
+                .notes-list li:before {
+                              content: "✓";
+                              position: absolute;
+                              left: 0;
+                              color: #28a745;
+                              font-weight: bold;
+                }
+
+                .btn {
+                              display: inline-block;
+                              background: #2c5282;
+                              color: white;
+                              padding: 12px 24px;
+                              border-radius: 6px;
+                              text-decoration: none;
+                              font-weight: bold;
+                              margin-top: 15px;
+                              transition: background 0.3s;
+                }
+
+                .btn:hover {
+                              background: #1e3a5f;
+                }
+
+                footer {
+                              text-align: center;
+                              padding: 30px;
+                              color: #666;
+                              font-size: 0.9em;
+                }
+
+                @media (max-width: 768px) {
+                              header h1 {
+                                                font-size: 1.8em;
+                              }
+
+                              table {
+                                                font-size: 0.85em;
+                              }
+
+                              th, td {
+                                                padding: 8px 5px;
+                              }
+
+                              .container {
+                                                padding: 10px;
+                              }
+
+                              .card {
+                                                padding: 20px;
+                              }
+                }
+
+                /* Make table responsive */
+                .table-container {
+                              overflow-x: auto;
+                }
+            </style>
+  </head>
+  <body>
+        <header>
+                  <h1>Diversion Program Resource Guide</h1>
+                <p>Palm Beach County, Florida</p>
+        </header>
+      
+      <div class="container">
+              <!-- Court Provider Information -->
+              <div class="card">
+                          <h2>Court Provider Information</h2>
+                          <div class="contact-info">
+                                          <p>Please contact <strong>Eric Thompson</strong> at <a href="mailto:ejthomps@pbcgov.org">ejthomps@pbcgov.org</a>a> for questions and/or information regarding Court Approved Providers.</p>
+                                          <p>View the Court Approved Batterers Intervention Program Providers listing.</p>
+                          </div>div>
+                          
+                          <h3>Sliding Scale Eligibility</h3>
+                          <p>To be eligible for the sliding scale, a social security earnings statement must be provided. This document can be obtained free of charge through the SSA website at <a href="https://www.ssa.gov/myaccount" target="_blank">www.ssa.gov/myaccount</a>a></p>
+              </div>div>
+              
+              <!-- Batterer's Intervention Program Providers -->
+              <div class="card">
+                          <h2>Batterer's Intervention Program Providers</h2>
+                          <h3>DCF-Certified Providers in Palm Beach County (Circuit 15)</h3>
+                          
+                          <div class="table-container">
+                                          <table>
+                                                                <thead>
+                                                                                          <tr>
+                                                                                                                        <th>Provider</th>
+                                                                                            <th>Phone</th>
+                                                                                            <th>Address</th>
+                                                                                            <th>Languages</th>
+                                                                                            <th>Delivery</th>
+                                                                                            <th>Groups</th>
+                                                                                          </tr>
+                                                                </thead>
+                                                              <tbody>
+                                                                                        <tr>
+                                                                                                                      <td class="provider-name">Florida Family Care</td>td>
+                                                                                                                      <td><a href="tel:5614479121" class="phone-link">(561) 447-9121</a>a></td>
+                                                                      <td>7100 West Camino Real, Suite 302<br>Boca Raton, FL 33432</td>
+                                                                      <td><span class="tag">English</span>span></td>
+                                                                      <td><span class="tag zoom">Zoom</span>span> <span class="tag in-person">In Person</span>span></td>
+                                                                      <td>Men & Women</td>
+                                                                                        </tr>
+                                                                  <tr>
+                                                                                                <td class="provider-name">Florida Family Care</td>td>
+                                                                                                <td><a href="tel:5614479121" class="phone-link">(561) 447-9121</a>a></td>td>
+                                                                                                <td>1501 Corporate Drive, Suite 100<br>Boynton Beach, FL 33435</td>td>
+                                                                                                <td><span class="tag">English</span>span></td>td>
+                                                                                                <td><span class="tag zoom">Zoom</span>span> <span class="tag in-person">In Person</span>span></td>td>
+                                                                                                <td>Men & Women</td>td>
+                                                                  </tr>
+                                                                                        <tr>
+                                                                                                                      <td class="provider-name">GAMA Counseling and Services, LLC</td>td>
+                                                                                                                      <td><a href="tel:5615033304" class="phone-link">(561) 503-3304</a>a></td>
+                                                                      <td>2101 Vista Parkway, #302<br>West Palm Beach, FL 33411</td>
+                                                                      <td><span class="tag">English</span>span> <span class="tag">Spanish</span>span></td>
+                                                                      <td><span class="tag in-person">In Person</span>span></td>
+                                                                      <td>Men & Women</td>
+                                                                                        </tr>
+                                                                  <tr>
+                                                                                                <td class="provider-name">Kefi Counseling LLC</td>td>
+                                                                                                <td><a href="tel:5612982935" class="phone-link">(561) 298-2935</a>a></td>td>
+                                                                                                <td>11440 Okeechobee Boulevard, Suite 204<br>Royal Palm Beach, FL 33411</td>td>
+                                                                                                <td><span class="tag">English</span>span> <span class="tag">Haitian Creole</span>span></td>td>
+                                                                                                <td><span class="tag zoom">Zoom</span>span> <span class="tag in-person">In Person</span>span></td>td>
+                                                                                                <td>Men & Women</td>td>
+                                                                  </tr>
+                                                                                        <tr>
+                                                                                                                      <td class="provider-name">Mental Massage Counseling</td>td>
+                                                                                                                      <td><a href="tel:5618027922" class="phone-link">(561) 802-7922</a>a></td>
+                                                                      <td>725 North Highway A1A, Suite A-104<br>Jupiter, FL 33458</td>
+                                                                      <td><span class="tag">English</span>span> <span class="tag">Spanish</span>span></td>
+                                                                      <td><span class="tag zoom">Zoom</span>span></td>
+                                                                      <td>Men Only</td>
+                                                                                        </tr>
+                                                                  <tr>
+                                                                                                <td class="provider-name">Synergy Family Therapy and Mental Wellness Group, LLC</td>td>
+                                                                                                <td><a href="tel:5616802077" class="phone-link">(561) 680-2077</a>a></td>td>
+                                                                                                <td>6801 Lake Worth Rd., Suite 302<br>Greenacres, FL 33467</td>td>
+                                                                                                <td><span class="tag">English</span>span> <span class="tag">Spanish</span>span> <span class="tag">Haitian Creole</span>span></td>td>
+                                                                                                <td><span class="tag zoom">Zoom</span>span> <span class="tag in-person">In Person</span>span></td>td>
+                                                                                                <td>Men & Women</td>td>
+                                                                  </tr>
+                                                                                        <tr>
+                                                                                                                      <td class="provider-name">TLC Counseling Services</td>td>
+                                                                                                                      <td><a href="tel:5613791440" class="phone-link">(561) 379-1440</a>a></td>
+                                                                      <td>1375 Gateway Boulevard, Suite 29<br>Boynton Beach, FL 33426</td>
+                                                                      <td><span class="tag">English</span>span> <span class="tag">Spanish</span>span></td>
+                                                                      <td><span class="tag zoom">Zoom</span>span> <span class="tag in-person">In Person</span>span></td>
+                                                                      <td>Men & Women</td>
+                                                                                        </tr>
+                                                              </tbody>
+                                          </table>
+                          </div>div>
+              </div>div>
+              
+              <!-- Other Court-Required Classes -->
+              <div class="card">
+                          <h2>Other Court-Required Classes</h2>
+                          <p>For other court-required courses such as Anger Management, Parenting, Theft Abatement, and more, visit:</p>
+                          
+                          <a href="https://nalearning.org/court-required-classes" target="_blank" class="btn">Visit NA Learning - Court Required Classes</a>a>
+                          
+                          <div class="alert-box important" style="margin-top: 25px;">
+                                          <p><strong>⚠️ IMPORTANT:</strong> When registering, please enter the referral code <span class="referral-code">DKARPAY</span>span> in the optional referral code field.</p>
+                                          <p style="margin-top: 10px;">This allows us to track your progress and access your certificates or course progress.</p>
+                          </div>div>
+              </div>div>
+              
+              <!-- Important Notes -->
+              <div class="card">
+                          <h2>Important Notes</h2>
+                          <ul class="notes-list">
+                                          <li>Most Batterer's Intervention providers serve <strong>both men and women</strong>strong>, except Mental Massage Counseling which serves <strong>men only</strong>strong></li>
+                                          <li>Several providers offer <strong>multilingual services</strong> in Spanish and Haitian Creole</li>
+                                          <li>Delivery options include <strong>Zoom</strong>, <strong>In Person</strong>, or <strong>both</strong></li>
+                                          <li>Provider information sourced from the Florida Department of Children and Families (DCF) at <a href="https://www.myflfamilies.com/services/abuse/domestic-violence/resources/find-local-batterers-intervention-program" target="_blank">myflfamilies.com</a>a></li>
+                          </ul>ul>
+              </div>div>
+      </div>div>
+      
+      <footer>
+                <p>Last Updated: December 2024</p>
+              <p>This resource guide is provided to assist clients participating in diversion programs.</p>
+      </footer>
+  </body>body>
+</html>html></p></p>
+      </footer></li></strong></strong></li></li></strong></p></p></td></td>
+                                                                                        </tr>
+                                                                  </tr></td></td>
+                                                                                        </tr>
+                                                                  </tr></td></td>
+                                                                                        </tr>
+                                                                  </tr></td></td>
+                                                                                        </tr>
+                                                              </tbody></th></th>
+                                                                                          </tr>
+                                                                </thead>
+                                          </table></strong></p></p></h1>
+        </header>
+  </body>
+      </style></title>
+  </head>
